@@ -1,0 +1,96 @@
+body{
+  /* background-color: #E5E5E5; */
+  background-color: #2474a5;
+  /* 4F8FB7 */
+  /* margin: 0px; */
+}
+
+#logo {
+  position: relative;
+  left: 2%;
+  height: 10%;
+  width: 10%;
+}
+
+/* navigation bar */
+.navbar{
+  background-color: rgb(167,199,219, .6);
+  padding: 10px;
+}
+
+.nav-item {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  color: #2474a5;
+}
+
+.navbar-text{
+  color: white;
+}
+
+/* homepage carousel */
+.carousel .slide{
+  z-index: -1;
+}
+
+.homeCarousel{
+  height: auto;
+  width: 100%;
+}
+
+/* alert box */
+.alert {
+  top: 18%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 5%;
+  border: 20px solid #2474a5;
+  background-color: white;
+  color: black;
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  z-index: 3;
+}
+
+/* exit button on alert box */
+.closebtn {
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 45px;
+  line-height: 0px;
+  cursor: pointer;
+  /* transition: 0.3s; */
+}
+
+.closebtn:hover {
+  color: #2474a5;
+}
+
+#surgeon{
+  filter: brightness(65%);
+}
+
+/* heading in homepage slide captions */
+.heading{
+  position: absolute;
+  float: left;
+  bottom: 350%;
+  font-size: 110px;
+}
+
+/* subheading in homepage slide captions */
+.subhead{
+  position: absolute;
+  float: left;
+  bottom: 200%;
+  font-weight: bold;
+  font-size: 30px;
+  color: #A7C7DB;
+}

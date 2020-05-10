@@ -1,0 +1,145 @@
+body{
+  /* background-color: #E5E5E5; */
+  background-color: #3981AE;
+  /* 4F8FB7 */
+}
+
+#logo {
+  position: relative;
+  left: 2%;
+  height: 10%;
+  width: 10%;
+}
+
+/* navigation bar */
+.navbar{
+  background-color: rgb(167,199,219,.8);
+  /* background-color: #91B9D2; */
+  padding: 10px;
+}
+
+.nav-item {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav {
+  position: relative;
+  top: 50%;
+  left: 42%;
+}
+
+#consulthead{
+  width: 100%;
+  filter: brightness(85%);
+  margin: 0;
+  padding: 0;
+}
+
+#description{
+  margin-top: -5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 5%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+}
+
+#heading{
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  top: 7%;
+  left: 13%;
+  color: white;
+  font-size: 60px;
+  z-index: 2;
+}
+
+/* nav bar and tab font size*/
+.nav-link{
+  font-size: 20px;
+  color: black;
+}
+
+/* tab background */
+.nav-itemTab{
+  background-color: #D3E3ED;
+}
+
+.nav-link:hover{
+  color: white;
+}
+
+/* form */
+/* Add padding to containers */
+.container {
+  top: 65%;
+  left: 20%;
+  width: 60%;
+  padding: 3%;
+  margin-bottom: 3%;
+  background-color: white;
+  position: absolute;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.boxesFont {
+  font-size: 20px;
+  text-align: center;
+}
+
+.terms {
+  position: relative;
+  left: 35%;
+}
+
+/* Set a style for the submit button */
+.submitbtn {
+  background-color: #3981AE;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+  left: 40%;
+  position: relative;
+  font-size: 18px;
+}
+
+.submitbtn:hover {
+  opacity: 1;
+}

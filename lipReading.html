@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>JC Clinic</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/videostyle.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+
+  <script src="js/lipReading.js" type="text/javascript"></script>
+
+  <script src="js/clmtrackr.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!-- <script language="javascript" type="text/javascript" src="p5.serialport.js"></script>
+  <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.28/lib/p5.serialport.js"></script> -->
+
+</head>
+<body>
+  <!-- navigatoin bar -->
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <!-- logo -->
+    <img src="images/logo white.png" id="logo" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-5">
+        <a class="nav-item nav-link mx-4" href="index.html">Home</a>
+        <a class="nav-item nav-link mx-4" href="consultation.html">Free Consultation</a>
+        <a class="nav-item nav-link mx-4" href="beforeandafter.html">Before & After</a>
+        <a class="nav-item nav-link mx-4" href="about.html">About</a>
+      </div>
+    </div>
+    <span class="navbar-text">
+      +82 12-3456-7890/info@jcclinic.com
+    </span>
+  </nav>
+
+  <!-- play audio recording -->
+  <audio autoplay>
+    <source src="audio/lips.mp3" type="audio/ogg">
+  </audio>
+
+  <!-- help tab -->
+  <img src="images/help.png" class="helpIcon"  onmouseover="lipInstructions()" onmouseout="nolipInstructions()" alt="help">
+  <div id="instructions">
+    <p id="help"><b>Help</b></p>
+    <li>Please purse your lips to have your picture taken</li>
+    <li>The white lines should connect your top and bottom lip</li>
+    <li>Head should be centered on the camera feed</li>
+    <li>Taking off your glasses may help with the alignment of the white lines</li>
+    <li>Click "Take Picture" if the program is not taking your picture successfully</li>
+    <li>Click "Continue" when your picture has been successfully taken</li>
+  </div>
+
+  <!-- before and after titles -->
+  <p class="b4afterHead beforeHead">Current face</p>
+
+  <p class="b4afterHead afterHead">Face with Improved Fortune</p>
+
+  <!-- picture snap button -->
+  <button type="button" onclick="lipSnap()" id="lipPicBtn" class="picBtn">
+    Take picture
+  </button>
+
+  <!-- Continue buttons -->
+  <button type="button" onclick="window.location.href = 'postReadings.html';" id="lipReadingContinueBtn" class="readingConsultButtons">
+    Continue
+  </button>
+
+</body>
+</html>

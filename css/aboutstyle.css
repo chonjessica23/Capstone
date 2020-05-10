@@ -1,0 +1,130 @@
+body{
+  /* background-color: #E5E5E5; */
+  background-color: #3981AE;
+  /* 4F8FB7 */
+}
+
+#logo {
+  position: relative;
+  left: 2%;
+  height: 10%;
+  width: 10%;
+}
+
+/* navigation bar */
+.navbar{
+  background-color: rgb(167,199,219, .8);
+  /* background-color: #91B9D2; */
+  padding: 10px;
+}
+
+/* .navbar.scrolled{
+  background-color: #91B9D2;
+
+} */
+
+.nav-item {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  color: #2474a5;
+}
+
+.nav {
+  position: relative;
+  top: 50%;
+  left: 42%;
+}
+
+#abouthead{
+  width: 100%;
+  filter: brightness(65%);
+  margin: 0;
+  padding: 0;
+}
+
+#description{
+  margin-top: -5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  padding-top: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 7%;
+  background-color: #F6F9FB;
+  /* background-image: linear-gradient(rgba(233,241,246,1), rgba(233,241,246,1),  rgba(233,241,246,1), rgba(233,241,246,1), rgba(233,241,246,.8), rgba(233,241,246,.6)); */
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+}
+
+#message{
+  font-size: 23px;
+  padding-bottom: 1%;
+}
+
+#heading{
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  top: 7%;
+  left: 10%;
+  color: white;
+  font-size: 60px;
+  z-index: 2;
+}
+
+/* pamphlet tabs */
+#myTab{
+  position: relative;
+  left: 0%;
+  margin-top: 3%;
+  margin-left: 40%;
+  margin-right: 40%;
+  justify-content: center;
+}
+
+#myTabContent{
+  position: relative;
+  top: 130%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+/* nav bar and tab font size*/
+.nav-link{
+  font-size: 20px;
+  color: black;
+}
+
+/* tab background */
+.nav-itemTab{
+  background-color: #D3E3ED;
+}
+
+.nav-link:hover{
+  color: white;
+}
+
+/* pamphlet */
+.pamphletImage{
+  width: 100%;
+}
+
+.pamText{
+  color: white;
+}
+
+.img1{
+  padding-bottom: 5%;
+}

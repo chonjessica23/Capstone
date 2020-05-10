@@ -1,0 +1,91 @@
+body{
+  /* background-color: #E5E5E5; */
+  background-color: #2474a5;
+  /* 4F8FB7 */
+  margin: 0px;
+}
+
+#logo {
+  position: relative;
+  left: 2%;
+  height: 10%;
+  width: 10%;
+}
+
+/* navigation bar */
+.navbar{
+  /* background-color: rgb(167,199,219, .6); */
+  background-color: #91B9D2;
+  padding: 10px;
+}
+
+.nav-item {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  color: #2474a5;
+}
+
+/* heading image */
+#headingImage{
+  width: 100%;
+  filter: brightness(80%);
+}
+
+#heading{
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  top: 22%;
+  left: 8%;
+  color: white;
+  font-size: 60px;
+  z-index: 2;
+}
+
+/* image tabs */
+#myTab{
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  right: 37%;
+  justify-content: center;
+}
+
+#myTabContent{
+  position: absolute;
+  top: 60%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.bottom-buffer{
+  margin-bottom: 3%;
+}
+
+/* nav bar and tab font size*/
+.nav-link{
+  font-size: 20px;
+  color: black;
+}
+
+/* tab background */
+.nav-itemTab{
+  background-color: #D3E3ED;
+}
+
+.nav-link:hover{
+  color: white;
+}
+
+.tabImages{
+  width: 100%;
+}

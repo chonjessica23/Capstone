@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>JC Clinic About</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/aboutstyle.css">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+  <script src="js/sketch.js" type="text/javascript"></script>
+</head>
+<body>
+  <!-- navigatoin bar -->
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <!-- logo -->
+    <img src="images/logo.png" id="logo" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-5">
+        <a class="nav-item nav-link mx-4" href="index.html">Home</a>
+        <a class="nav-item nav-link mx-4" href="consultation.html">Free Consultation</a>
+        <a class="nav-item nav-link mx-4" href="beforeandafter.html">Before & After</a>
+        <a class="nav-item nav-link mx-4" href="about.html">About</a>
+      </div>
+    </div>
+    <span class="navbar-text">
+      +82 12-3456-7890/info@jcclinic.com
+    </span>
+  </nav>
+
+  <img src="images/abouthead.jpg" id="abouthead" alt="About Head">
+  <p id="heading"> <br> <i>A Reflection on Lookism</i></p>
+
+  <!-- text -->
+  <div id="description">
+
+    <h5 id="message">A Message from the Creator</h5>
+    <br>
+    <p>
+      The suggestions made to change users' faces are interpretations of face readings. Actual face fortune telling requires years of studying and training. Thus, what has been said should be treated lightly.
+      <br><br>
+      More importantly, I would like to emphasize that this project was by no means meant to critique plastic surgery or one's appearance. Rather, I hope to make people who interact with <i>A Reflection on Lookism</i> reflect upon how society places importance on looks.
+      <br><br>
+      For more information on the context and inspiration behind my capstone, please refer to my project statement or informational pamphlet below.
+      <br><br>
+      <a href="projectStatement.pdf" target="_blank">Project statement</a>
+    </p>
+  </div>
+
+  <!-- pamphlet tabs -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <!--english tab -->
+    <li class="nav-itemTab">
+      <a class="nav-link active tabeLabel" id="english-tab" data-toggle="tab" href="#english" role="tab" aria-controls="english" aria-selected="true">English</a>
+    </li>
+    <!-- korean tab -->
+    <li class="nav-itemTab">
+      <a class="nav-link tabeLabel" id="korean-tab" data-toggle="tab" href="#korean" role="tab" aria-controls="korean" aria-selected="false">&#54620;&#44397;&#50612;</a>
+    </li>
+    <!-- chinese tab -->
+    <li class="nav-itemTab">
+      <a class="nav-link tabeLabel" id="contact-tab" data-toggle="tab" href="#chinese" role="tab" aria-controls="chinese" aria-selected="false">&#20013;&#25991;</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <!--english tab -->
+    <div class="tab-pane fade show active" id="english" role="tabpanel" aria-labelledby="english-tab">
+      <h6 class="pamText">Original format: tri-fold pamphlet</h6>
+      <img src="images/pamphlet eng 1.jpg" class="pamphletImage img1" alt="eng pamphlet 1">
+      <img src="images/pamphlet eng 2.jpg" class="pamphletImage" alt="eng pamphlet 2">
+    </div>
+    <!-- korean tab -->
+    <div class="tab-pane fade" id="korean" role="tabpanel" aria-labelledby="korean-tab">
+      <h6 class="pamText">Original format: tri-fold pamphlet</h6>
+      <p class="pamText">Translated by: Steve Chon</p>
+      <img src="images/pamphlet kor 1.jpg" class="pamphletImage img1" alt="kor pamphlet 1">
+      <img src="images/pamphlet kor 2.jpg" class="pamphletImage" alt="kor pamphlet 2">
+    </div>
+    <!-- chinese tab -->
+    <div class="tab-pane fade" id="chinese" role="tabpanel" aria-labelledby="chinese-tab">
+      <h6 class="pamText">Original format: tri-fold pamphlet</h6>
+      <p class="pamText">Translated by: Jinghong Bi</p>
+      <img src="images/pamphlet chin 1.jpg" class="pamphletImage img1" alt="chin pamphlet 1">
+      <img src="images/pamphlet chin 2.jpg" class="pamphletImage" alt="chin pamphlet 2">
+    </div>
+  </div>
+
+</body>
+</html>

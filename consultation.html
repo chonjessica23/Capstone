@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>JC Clinic Consultation</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/consultationstyle.css">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+</head>
+<body>
+  <!-- navigatoin bar -->
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <!-- logo -->
+    <img src="images/logo.png" id="logo" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-5">
+        <a class="nav-item nav-link mx-4" href="index.html">Home</a>
+        <a class="nav-item nav-link mx-4" href="consultation.html">Free Consultation</a>
+        <a class="nav-item nav-link mx-4" href="beforeandafter.html">Before & After</a>
+        <a class="nav-item nav-link mx-4" href="about.html">About</a>
+      </div>
+    </div>
+    <span class="navbar-text">
+      +82 12-3456-7890/info@jcclinic.com
+    </span>
+  </nav>
+
+  <img src="images/consultationhead.jpeg" id="consulthead" alt="Consultation Head">
+  <p id="heading"> <br>Online Consultation</p>
+
+  <!-- text -->
+  <div id="description">
+    <p>
+      <b>Please fill out the form below to start the consultation.</b>
+    </p>
+  </div>
+
+  <!-- form -->
+  <form action="beginConsult.html">
+    <div class="container">
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" name="psw">
+
+      <label for="last name"><b>Last Name</b></label>
+      <input type="text" name="psw">
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" name="psw">
+
+      <label for="phone"><b>Telephone #</b></label>
+      <input type="text" name="psw">
+
+      <label for="nationality"><b>Nationality</b></label>
+      <input type="text" name="psw">
+
+      <p><b>Sex</b></p>
+      <input type="radio" name="gender" value="male">
+      <label for="male" class="boxesFont">Male</label>
+      <br>
+      <input type="radio" name="gender" value="female">
+      <label for="female" class="boxesFont">Female</label>
+      <br>
+      <input type="radio" name="gender" value="other">
+      <label for="other" class="boxesFont">Other</label>
+      <br>
+
+      <input type="checkbox" class="terms" name="terms" value="terms" required>
+      <label for="terms" class="boxesFont terms">I accept the Terms of Service</label><br>
+
+      <button type="submit" class="submitbtn">Submit</button>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <!-- <footer class="page-footer font-small blue"> -->
+  <!-- Copyright -->
+  <!-- <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+</div>
+</footer> -->
+
+</body>
+</html>

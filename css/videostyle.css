@@ -1,0 +1,653 @@
+body{
+  /* background-color: #E5E5E5; */
+  background-color: #2474a5;
+  /* 4F8FB7 */
+  margin: 0px;
+}
+
+#logo {
+  position: relative;
+  left: 2%;
+  height: 10%;
+  width: 10%;
+}
+
+/* navigation bar */
+.navbar{
+  background-color: rgb(167,199,219, .6);
+  padding: 10px;
+}
+
+.nav-item {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  color: #2474a5;
+}
+
+.navbar-text{
+  color: white;
+}
+
+/* consultation videos */
+.consultVideos{
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 105%;
+  min-height: 100%;
+}
+
+#walkVid {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/* video buttons */
+.consultButtons{
+  background-color: #3981AE;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  /* opacity: 0.9; */
+  position: absolute;
+  font-size: 24px;
+}
+
+#beginConsultBtn{
+  left: 43%;
+  bottom: 10%;
+  display: none;
+}
+
+#welcomeBtn{
+  left: 45%;
+  bottom: 10%;
+  display: none;
+}
+
+.faceButtons{
+  z-index: 2;
+  width: 60%;
+  background: #3981AE;
+  color: white;
+  padding: 30px 30px;
+  border: none;
+  cursor: pointer;
+  /* opacity: 0.9; */
+  left: 20%;
+  position: relative;
+  font-size: 21px;
+  text-align: center;
+}
+
+.faceButtons:hover{
+  background: #4F8FB7;
+}
+
+#option1{
+  margin-top: 15%;
+  display: none;
+}
+
+#option2{
+  margin-top: 3%;
+  display: none;
+}
+
+#option3{
+  margin-top: 3%;
+  display: none;
+}
+
+#option4{
+  margin-top: 3%;
+  display: none;
+}
+
+/* gray layer behind fortune option buttons */
+#grayLayer{
+  position: absolute;
+  right:0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, .4);
+  display: none;
+}
+
+/* eyes */
+#eyeContinueBtn{
+  left: 46%;
+  bottom: 10%;
+  display: none;
+}
+
+/* eyebrows */
+#eyebrowsContinueBtn{
+  left: 46%;
+  bottom: 10%;
+  display: none;
+}
+
+/* lips */
+#lipsContinueBtn{
+  left: 46%;
+  bottom: 10%;
+  display: none;
+}
+
+/* post reading options */
+#option1post{
+  margin-top: 10%;
+}
+
+#option2post{
+  margin-top: 3%;
+}
+
+#option3post{
+  margin-top: 3%;
+}
+
+#option4post{
+  margin-top: 3%;
+}
+
+#doneBtn{
+  z-index: 2;
+  position: relative;
+  background-color: #E9F1F6;
+  color: #2474a5;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  left: 20%;
+  margin-top: 3%;
+}
+
+#doneBtn:hover{
+  background-color: #91B9D2;
+  color: white;
+}
+
+/* nose */
+#noseContinueBtn{
+  left: 46%;
+  bottom: 10%;
+  display: none;
+}
+
+/* face reading related buttons */
+.helpIcon{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 12%;
+  right: 1%;
+  cursor: pointer;
+}
+
+#instructions{
+  z-index: 2;
+  position: absolute;
+  font-size: 20px;
+  padding: 40px;
+  height: 62%;
+  width: 30%;
+  top: 15%;
+  right: 5%;
+  color: #2474a5;
+  background: white;
+  display: none;
+}
+
+#help{
+  text-align: center;
+}
+
+.b4afterHead{
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+.beforeHead{
+  left: 20%;
+  top: 15%;
+}
+
+.afterHead{
+  top: 15%;
+  left: 55%;
+}
+
+.readingConsultButtons{
+  background-color: white;
+  color: #3981AE;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  /* opacity: 0.9; */
+  position: absolute;
+  font-size: 20px;
+}
+
+.picBtn{
+  background-color: #2474a5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  /* opacity: 0.9; */
+  position: absolute;
+  font-size: 18px;
+}
+
+#eyebrowReadingContinueBtn{
+  left: 46%;
+  bottom: 10%;
+}
+
+#eyebrowPicBtn{
+  left: 47%;
+  bottom: 5%;
+}
+
+#eyeReadingContinueBtn{
+  left: 46%;
+  bottom: 10%;
+}
+
+#eyePicBtn{
+  left: 47%;
+  bottom: 5%;
+}
+
+#noseReadingContinueBtn{
+  left: 46%;
+  bottom: 10%;
+}
+
+#nosePicBtn{
+  left: 47%;
+  bottom: 5%;
+}
+
+#lipReadingContinueBtn{
+  left: 46%;
+  bottom: 10%;
+}
+
+#lipPicBtn{
+  left: 47%;
+  bottom: 5%;
+}
+
+/* ending consultation */
+#endBtn{
+  z-index: 2;
+  left: 45%;
+  top: 50%;
+  padding: 15px 50px;
+  display: none;
+}
+
+#endBtn:hover{
+  background-color: #4F8FB7;
+}
+
+/* gray filter behind end of consult */
+#grayLayerEnd{
+  position: absolute;
+  right:0;
+  bottom: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, .6);
+  display: none;
+}
+
+#contactInfo{
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  top: 70%;
+  left: 43%;
+  display: none;
+}
+
+/* hover over images */
+#hoverImages{
+  position: relative;
+  width: 65vh;
+  height: 40vh;
+  left: 17%;
+  background: rgb(255,255,255,.3);
+  margin-top: 13%;
+  line-height: 40vh;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+
+#imageText{
+  /* width: 40vh; */
+  /* background: rgb(255,255,255,.3); */
+  text-align: center;
+  position: relative;
+  /* left: 30%; */
+  /* margin-top: -28%; */
+  color: #2474a5;
+  font-size: 40px;
+  display: none;
+}
+
+/* hover over books */
+#hoverBooks{
+  position: relative;
+  width: 22vh;
+  height: 20vh;
+  left: 73%;
+  padding-top: 3%;
+  background: rgb(255,255,255,.3);
+  top: 15%;
+  cursor: pointer;
+  text-align: center;
+  display: none;
+}
+
+#bookText{
+  /* width: 40vh; */
+  /* background: rgb(255,255,255,.3); */
+  text-align: center;
+  position: relative;
+  /* left: 65%; */
+  /* margin-top: 10%; */
+  color: #2474a5;
+  font-size: 30px;
+  display: none;
+}
+
+/* poster page */
+.imgSource{
+  font-size: 14px;
+  text-align: center;
+}
+
+#postersBg{
+  height: 100%;
+  width: 100%;
+}
+
+#grayLayerPoster{
+  position: absolute;
+  right:0;
+  bottom: 0;
+  /* z-index: 12; */
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, .6);
+  display: none;
+}
+
+#posterStartConsultBtn{
+  left: 50%;
+  bottom: 3%;
+}
+
+.text{
+  font-size: 24px;
+  color: white;
+  position: absolute;
+}
+
+/* eye poster */
+#poster1{
+  position: absolute;
+  top: 13%;
+  height: 40%;
+  width: 30%;
+  left: 6%;
+  /* background: green; */
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#eyePoster{
+  position: absolute;
+  height: 75%;
+  width: 60%;
+  bottom: 10%;
+  left: 39%;
+  display: none;
+}
+
+#text1{
+  /* background: green; */
+  height: 35%;
+  width: 30%;
+  bottom: 30%;
+  left: 5%;
+  display: none;
+}
+
+/* lip poster */
+#poster2{
+  position: absolute;
+  top: 15%;
+  height: 45%;
+  width: 20%;
+  left: 43%;
+  /* background: pink; */
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#lipPoster{
+  position: absolute;
+  height: 85%;
+  width: 35%;
+  bottom: 3%;
+  left: 3%;
+  display: none;
+}
+
+#text2{
+  /* background: green; */
+  height: 50%;
+  width: 30%;
+  bottom: 20%;
+  left: 45%;
+  display: none;
+}
+
+/* diagram poster */
+#poster3{
+  position: absolute;
+  top: 20%;
+  height: 35%;
+  width: 25%;
+  left: 70%;
+  /* background: red; */
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#diagramPoster{
+  position: absolute;
+  height: 75%;
+  width: 55%;
+  bottom: 10%;
+  left: 5%;
+  display: none;
+}
+
+#text3{
+  /* background: green; */
+  height: 50%;
+  width: 30%;
+  bottom: 10%;
+  left: 65%;
+  display: none;
+}
+
+/* stall poster */
+#poster4{
+  position: absolute;
+  top: 60%;
+  height: 35%;
+  width: 30%;
+  left: 6%;
+  /* background: blue; */
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#stallPoster{
+  position: absolute;
+  height: 75%;
+  width: 60%;
+  bottom: 8%;
+  left: 38%;
+  display: none;
+}
+
+#text4{
+  /* background: green; */
+  height: 30%;
+  width: 30%;
+  bottom: 40%;
+  left: 5%;
+  display: none;
+}
+
+/* surgery poster */
+#poster5{
+  position: absolute;
+  top: 70%;
+  height: 25%;
+  width: 25%;
+  left: 40%;
+  /* background: orange; */
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#surgeryPoster{
+  position: absolute;
+  height: 50%;
+  width: 45%;
+  bottom: 30%;
+  left: 10%;
+  display: none;
+}
+
+#text5{
+  /* background: green; */
+  height: 35%;
+  width: 30%;
+  bottom: 45%;
+  left: 65%;
+  display: none;
+}
+
+/* face poster */
+#poster6{
+  position: absolute;
+  top: 65%;
+  height: 25%;
+  width: 25%;
+  left: 68%;
+  /* background: yellow; */
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#facePoster{
+  position: absolute;
+  height: 55%;
+  width: 50%;
+  bottom: 20%;
+  left: 10%;
+  display: none;
+}
+
+#text6{
+  /* background: green; */
+  height: 30%;
+  width: 30%;
+  bottom: 35%;
+  left: 65%;
+  display: none;
+}
+
+#postertoBooksBtn{
+  left: 30%;
+  bottom: 3%;
+}
+
+
+/* books page */
+#bookStartConsultBtn{
+  left: 50%;
+  bottom: 10%;
+}
+
+#grayLayerBooks{
+  position: absolute;
+  right:0;
+  bottom: 0;
+  /* z-index: 12; */
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, .6);
+  display: none;
+}
+
+#books{
+  position: absolute;
+  background: rgb(255,255,255,.2);
+  cursor: pointer;
+  height: 40%;
+  width: 40%;
+  bottom: 20%;
+  left: 55%;
+  /* display: none; */
+}
+
+#textBook{
+  /* background: green; */
+  height: 45%;
+  width: 40%;
+  bottom: 30%;
+  left: 10%;
+  display: none;
+}
+
+#booktoPosterBtn{
+  left: 30%;
+  bottom: 10%;
+}

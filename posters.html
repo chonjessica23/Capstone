@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>JC Clinic</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/videostyle.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+
+  <script src="js/videos.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <!-- navigatoin bar -->
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <!-- logo -->
+    <img src="images/logo white.png" id="logo" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-5">
+        <a class="nav-item nav-link mx-4" href="index.html">Home</a>
+        <!-- CORRECT THIS -->
+        <a class="nav-item nav-link mx-4" href="consultation.html">Free Consultation</a>
+        <a class="nav-item nav-link mx-4" href="beforeandafter.html">Before & After</a>
+        <a class="nav-item nav-link mx-4" href="about.html">About</a>
+      </div>
+    </div>
+    <span class="navbar-text">
+      +82 12-3456-7890/info@jcclinic.com
+    </span>
+  </nav>
+
+  <!-- background -->
+  <div id="background">
+    <img src="images/posters.JPG" id="postersBg" alt="poster background">
+  </div>
+
+  <!-- empty div for gray opaque layer-->
+  <div id="grayLayerPoster"></div>
+
+  <!-- hover over pictures -->
+  <!-- eyes -->
+  <div class="posters" id="poster1" onmouseover="hover1()" onmouseout="nohover1()"></div>
+  <img src="images/poster1.JPG" id="eyePoster" alt="poster background">
+  <div class="text"onmouseover="hover1()" onmouseout="nohover1()" id="text1">
+    <p>There are many characteristics about the eye area that are examined during a face reading. Depending on what aspect of fortune is being determined, a face reader may look for the distance between the eyes, color of the iris, pupil dilation, etc. This chart highlights a few of such characteristics.</p>
+    <br>
+    <p class="imgSource">Image source: https://hunterswritings.com/2016/01/15/using-face-shapes-and-physiognomy-for-character-development/</p>
+  </div>
+
+  <!-- lips -->
+  <div class="posters" id="poster2" onmouseover="hover2()" onmouseout="nohover2()"></div>
+  <img src="images/poster2.JPG" id="lipPoster" alt="poster background">
+  <div class="text" onmouseover="hover2()" onmouseout="nohover2()" id="text2">
+    <p>Similar to the eyes, there are also many features of the lips that are taken into accoutn during a reading. One can focus on the color of the clips, proportion relative to the rest of the face, lip size, and more. This diagram focuses on lip shape.</p>
+    <br>
+    <p class="imgSource">Image source: https://hunterswritings.com/2016/01/15/using-face-shapes-and-physiognomy-for-character-development/</p>
+  </div>
+
+  <!-- diagram -->
+  <div class="posters" id="poster3" onmouseover="hover3()" onmouseout="nohover3()"></div>
+  <img src="images/poster3.JPG" id="diagramPoster" alt="poster background">
+  <div class="text" onmouseover="hover3()" onmouseout="nohover3()" id="text3">
+    <p>Face fortune telling involves not only the examination of separate facial features, but also the balance and proportions of the face as a whole. This face diagram shows what areas of the face symbolize which general aspects of one's fortune.</p>
+    <br>
+    <p class="imgSource">Image source: https://www.yourchineseastrology.com/face-reading/</p>
+  </div>
+
+  <!-- stall -->
+  <div class="posters" id="poster4" onmouseover="hover4()" onmouseout="nohover4()"></div>
+  <img src="images/poster4.JPG" id="stallPoster" alt="poster background">
+  <div class="text" onmouseover="hover4()" onmouseout="nohover4()" id="text4">
+    <p>Often times, fortune tellers can be found in small tents such as the one in the image. Fortune telling stalls are scattered throughout certain streets in Seoul, South Korea. They can be found casually on the sides of busy areas, where one can stumble upon one on whim. </p>
+    <br>
+    <p class="imgSource">Image source: https://www.alamy.com/stock-photo/fortune-tellers.html</p>
+  </div>
+
+  <!-- surgery -->
+  <div class="posters" id="poster5" onmouseover="hover5()" onmouseout="nohover5()"></div>
+  <img src="images/poster5.JPG" id="surgeryPoster" alt="poster background">
+  <div class="text" onmouseover="hover5()" onmouseout="nohover5()" id="text5">
+    <p>Plastic surgery in South Korea is very commonplace, relative to many other countries in the world. Advertisements and images of plastic surgery results can be seen throughout Seoul. However, there has been effort made by the government to decrease the prevalence of plastic surgery advertisements.</p>
+    <br>
+    <p class="imgSource">Image source: https://learnsomethinginteresting.com/2019/05/24/south-korean-culture-and-the-importance-of-facial-symmetry-and-beauty/</p>
+  </div>
+
+  <!-- face -->
+  <div class="posters" id="poster6" onmouseover="hover6()" onmouseout="nohover6()"></div>
+  <img src="images/poster6.JPG" id="facePoster" alt="poster background">
+  <div class="text" onmouseover="hover6()" onmouseout="nohover6()" id="text6">
+    <p>Because <i>gwansang</i> (Korean face fortune telling) is based upon Chinese face fortune telling, many Korean face readers understand and refer to the Chinese principles. This chart illustrates some of the different facial structures individual may have.</p>
+    <br>
+    <p class="imgSource">Image source: https://www.yourchineseastrology.com/face-reading/</p>
+  </div>
+
+  <!-- poster button-->
+  <button type="button" onclick="window.location.href = 'books.html';" id="postertoBooksBtn" class="consultButtons">
+    Examine books
+  </button>
+
+  <!-- continue button -->
+  <button type="button" onclick="window.location.href = 'welcome.html';" id="posterStartConsultBtn" class="consultButtons">
+    Continue to Consultation
+  </button>
+
+
+</body>
+</html>
